@@ -67,12 +67,14 @@
         </table>
         <button onclick="myFunction()">Try it</button>
     </div>
-    
+
     <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
     <script src="liff-starter.js"></script>
     <script>
         function myFunction() {
-            alert("I am an alert box!");
+            liff.init(function (data) {
+                alert(data);
+            });
         }
-        </script>
+    </script>
 </body>
