@@ -1,6 +1,6 @@
 window.onload = function (e) {
     liff.init(function (data) {
-        alert(data)
+        alert(data);
         initializeApp(data);
     });
 };
@@ -15,6 +15,7 @@ function initializeApp(data) {
 
     // openWindow call
     document.getElementById('openwindowbutton').addEventListener('click', function () {
+        alert("I am an alert box!");
         liff.openWindow({
             url: 'https://line.me'
         });
